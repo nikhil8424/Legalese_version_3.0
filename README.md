@@ -109,8 +109,3 @@ LegalEase simplifies legal document analysis using AI. It helps identify documen
 Contributions are welcome! Please submit a pull request or report issues.
 
 ---
-
-## License
-
-Specify your license here (e.g., MIT License).
-
