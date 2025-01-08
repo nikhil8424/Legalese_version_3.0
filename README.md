@@ -110,8 +110,8 @@ Contributions are welcome! Please submit a pull request or report issues.
 
 ---
 ## TO RUN CODE
-download zip -> extract to a directory
-open cmd 
-move to that directory
-run the following command : 
-python app.py
+1. download zip -> extract to a directory
+2. open cmd 
+3. move to that directory
+1. run the following command : 
+2. python app.py
