@@ -1,84 +1,116 @@
+
 # LegalEase: Your AI-Powered Legal Assistant
 
-LegalEase simplifies legal document analysis using AI.  It identifies document types, extracts key information, simplifies legal jargon, and summarizes text. This project was created for a GenAI Hackathon.
+LegalEase simplifies legal document analysis using AI. It helps identify document types, extract key information, simplify legal jargon, and summarize content, making legal processes more accessible. This project was created for the GenAI Hackathon.
+
+---
 
 ## Features
 
-* **Document Identification:**  Determines the type of legal document.
-* **Key Information Extraction:** Extracts dates, organizations, locations (Maharashtra cities), and names.
-* **Plain Language Simplification:**  Converts complex legal text into plain English.
-* **Summarization:** Provides concise document summaries.
-* **Multilingual Support:** Handles English, Marathi, Hindi, and Tamil, translating to English for processing.
-* **Chatbot:**  Basic chatbot using keyword matching or (optionally) Google Gemini for advanced interactions.
+1. **Document Identification**  
+   - Automatically determines the type of legal document (e.g., contract, agreement, affidavit).  
+
+2. **Key Information Extraction**  
+   - Extracts critical details like dates, organizations, names, and locations (supports cities in Maharashtra).  
+
+3. **Plain Language Simplification**  
+   - Converts complex legal language into plain English for better comprehension.  
+
+4. **Summarization**  
+   - Provides concise summaries of lengthy legal documents.  
+
+5. **Multilingual Support**  
+   - Handles English, Marathi, Hindi, and Tamil. Translates non-English text to English for processing.  
+
+6. **Chatbot (Optional)**  
+   - A basic chatbot for interaction using keyword matching.  
+   - Advanced chatbot capabilities using the **Google Gemini API** (if enabled).  
+
+---
 
 ## Technical Details
 
-* **Framework:** Flask (Python)
-* **OCR:** Tesseract OCR
-* **PDF Processing:** PyPDF2, pdf2image
-* **Translation:** Deep Translator (Google Translate)
-* **Summarization:** Sumy
-* **NLP:** spaCy, NLTK, WordNet
-* **Paraphrasing:** Transformers (T5-small)
-* **Chatbot (Advanced):** Google Gemini API (optional)
-* **Frontend:** HTML, CSS, JavaScript
+- **Backend Framework**: Flask (Python)  
+- **OCR**: Tesseract OCR  
+- **PDF Processing**: PyPDF2, pdf2image  
+- **Translation**: Deep Translator (Google Translate)  
+- **Summarization**: Sumy  
+- **NLP**: spaCy, NLTK, WordNet  
+- **Paraphrasing**: Transformers (T5-small model)  
+- **Chatbot (Advanced)**: Google Gemini API (optional)  
+- **Frontend**: HTML, CSS, JavaScript  
+
+---
 
 ## Installation
 
-1. **Clone:** `git clone https://github.com/nikhil8424/GenAi-Hackathon.git`
-2. **Navigate:** `cd GenAi-Hackathon`
-3. **Virtual Environment (Recommended):**
+1. **Clone the Repository**  
    ```bash
-   python3 -m venv venv
-   venv\Scripts\activate  # Windows
-   source venv/bin/activate  # macOS/Linux
-Use code with caution.
-Markdown
-Install: pip install -r requirements.txt (Create requirements.txt with dependencies - see below)
+   git clone https://github.com/nikhil8424/GenAi-Hackathon.git
+   cd GenAi-Hackathon
+   ```
 
-Tesseract OCR: Download and install. Set pytesseract.pytesseract.tesseract_cmd in app.py correctly.
+2. **Set Up a Virtual Environment** (Recommended)  
+   - **Windows**:  
+     ```bash
+     python3 -m venv venv
+     venv\Scripts\activate
+     ```  
+   - **macOS/Linux**:  
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
 
-Gemini API Key (Optional): Set API key in app.py (use environment variables in production).
+3. **Install Required Libraries**  
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Requirements.txt Example
-flask
-PyPDF2
-pdf2image
-pillow
-pytesseract
-deep-translator
-sumy
-spacy
-nltk
-transformers
-google-generativeai  # If using Gemini
-Use code with caution.
-Usage
-Upload a document (PDF, PNG, JPG).
+4. **Install Tesseract OCR**  
+   - Download and install Tesseract OCR for your platform.  
+   - Update the `pytesseract.pytesseract.tesseract_cmd` path in `app.py`.
 
-Select the document's language.
+5. **Set Up Google Gemini API Key (Optional)**  
+   - If using the advanced chatbot feature, configure the Gemini API key as an environment variable.  
 
-Click "Upload".
+---
 
-Choose a functionality (Identify, Key Points, etc.).
+## Usage
 
-View results.
+1. **Upload a Document**  
+   - Upload a PDF, PNG, or JPG file.  
 
-Use the chatbot (optional).
+2. **Choose Document Language**  
+   - Select the language of the document (e.g., English, Marathi).  
 
-Future Enhancements
-Improved UI/UX
+3. **Select Functionality**  
+   - Choose from features like document identification, key point extraction, simplification, or summarization.  
 
-Enhanced chatbot
+4. **View Results**  
+   - Review the processed output.  
 
-More language support
+5. **Use the Chatbot (Optional)**  
+   - Interact with the chatbot for queries.  
 
-Advanced legal AI integration
+---
 
-Contributing
-Contributions welcome! Submit pull requests.
+## Future Enhancements
 
-License
-[Specify your license here. E.g., MIT License]
+- Improved UI/UX  
+- Enhanced chatbot capabilities  
+- Support for more languages  
+- Integration with advanced legal AI models  
 
-This version is more concise while retaining essential information.  Remember to replace placeholders like "[Specify your license here]" with the actual license you are using.
+---
+
+## Contributing
+
+Contributions are welcome! Please submit a pull request or report issues.
+
+---
+
+## License
+
+Specify your license here (e.g., MIT License).
+
