@@ -109,3 +109,9 @@ LegalEase simplifies legal document analysis using AI. It helps identify documen
 Contributions are welcome! Please submit a pull request or report issues.
 
 ---
+## TO RUN CODE
+download zip -> extract to a directory
+open cmd 
+move to that directory
+run the following command : 
+python app.py
