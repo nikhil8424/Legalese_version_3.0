@@ -115,3 +115,6 @@ Contributions are welcome! Please submit a pull request or report issues.
 3. move to that directory
 1. run the following command : 
 2. python app.py
+
+
+[document](https://github.com/nikhil8424/Legalese_version_3.0/blob/main/Legalese_report.docx)
